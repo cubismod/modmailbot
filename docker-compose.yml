@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   modmail:
-    image: quay.io/cubismod/modbot
+    image: quay.io/cubismod/modmailbot
     container_name: 'modbot'
     restart: unless-stopped
     volumes:
