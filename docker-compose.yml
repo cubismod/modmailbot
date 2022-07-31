@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  modmail:
+    image: quay.io/cubismod/modbot
+    container_name: 'modbot'
+    restart: unless-stopped
+    volumes:
+      - ./config/config.ini:/usr/src/modmail/config.ini
+      - modmail_db:/usr/src/modmail/db
+      - modmail_attachments:/usr/src/modmail/attachments
+      - modmail_logs:/usr/src/modmail/logs
+    logging:
+      driver: journald
+      options:
+        tag: 'modmail'

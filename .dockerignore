@@ -1,0 +1,12 @@
+.git
+.github
+docs/
+.editorconfig
+.eslintrc
+.gitignore
+CHANGELOG.md
+config.ini
+config.example.ini
+LICENSE.md
+start.bat
+node_modules/
