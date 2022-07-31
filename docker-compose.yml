@@ -13,3 +13,8 @@ services:
       driver: journald
       options:
         tag: 'modmail'
+
+volumes:
+  modmail_db:
+  modmail_attachments:
+  modmail_logs:
