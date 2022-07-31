@@ -5,7 +5,7 @@ services:
     container_name: 'modbot'
     restart: unless-stopped
     volumes:
-      - ./config/config.ini:/usr/src/modmail/config.ini
+      - ./config.ini:/usr/src/modmail/config.ini
       - modmail_db:/usr/src/modmail/db
       - modmail_attachments:/usr/src/modmail/attachments
       - modmail_logs:/usr/src/modmail/logs
